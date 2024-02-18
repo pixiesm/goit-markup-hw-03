@@ -7,15 +7,13 @@ body {
     color: #434455;
     background-color: #fff;
 }
-button {cursor: pointer;
-    display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 10px;
-border-radius: 4px;
+button {margin: 188px 163px;
+    cursor: pointer;
+    display: block;
+    border: none;
+    border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     background: #4d5ae5;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);}
@@ -35,9 +33,9 @@ header { box-sizing: border-box;
 }
 .page-header {border-bottom: 1px solid #e7e9fc;}
 .container {width:1158px;
-padding: 0 15px 0 15px;
+padding: 0 15px;
 margin-left: auto;
-margin-right:auto;}
+margin-right: auto;}
 /*  
 */
 .container.header-container {display: flex;
@@ -98,20 +96,12 @@ gap: 40px;}
 /* section 1 */
 .section {padding-top: 120px;
 padding-bottom: 120px;}
-.hero-container{
+.page-title-box.section {
+    padding: 188px 0 188px;
+    background-color: #2e2f42;
+    padding-right: 450px;
+    padding-left: 450px;
 }
-/*  
-.hero-container { 
-    display:flex;
-    justify-content: center;
-    padding-top: 188px;
-    padding-right: 472px;
-    padding-bottom: 188px;
-    padding-left: 472px;
-    padding-right: 300px;
-        padding-bottom: 188px;
-        padding-left: 300px;
-    }*/
 .page-title {
     font-weight: 700;
     font-size: 56px;
@@ -119,28 +109,16 @@ padding-bottom: 120px;}
     letter-spacing: 0.02em;
     text-align: center;
     color:#fff;
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 48px;
 }
-.page-title-box { 
-    background-color: #2e2f42;
-    max-width: 1128px;
-padding-right: 450px;
-padding-left: 450px;
-display: flex;
-}
-.page-title-box button {}
+
 .page-title-box button:hover,
 .page-title-box button:focus {
     background-color: #404bbf;}
 .btn-order-service { 
-    box-sizing: border-box;
-    border-radius: 4px;
-    padding: 16px 32px;
-    min-width: 169px;
-    height: 56px;
- background-color: #4d5ae5;
-   font-family: inherit;
+ 
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
