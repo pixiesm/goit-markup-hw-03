@@ -191,7 +191,6 @@ address {
   background: #f4f4fd;
 }
 .team-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -209,31 +208,29 @@ address {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   width: 264px;
   height: 380px;
 }
 
 .name-position {
   padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+}
+.team-item-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
 }
 .team-list-item:not(:last-child) {
   margin-right: 24px;
 }
 
-.team-item-title {
-  text-align: center;
-}
-.team-list-item h3 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-}
 .team-list-item p {
   font-size: 16px;
   line-height: 1.5;
@@ -243,47 +240,47 @@ address {
 }
 
 /* portfolio */
+
 .portfolio-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 72px;
   row-gap: 48px;
-  column-gap: 20px;
+  column-gap: 24px;
 }
 .portfolio-list-item {
   width: 360px;
-  border: 1px solid #e7e9fc;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   gap: 8px;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
   width: 360px;
 }
-.portfolio-item-text {
+.portfolio-item-container {
+  width: 360px;
   display: flex;
   gap: 8px;
   flex-direction: column;
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
-.portfolio-list-item h3 {
+.portfolio-item-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .portfolio-item-description {
   font-size: 16px;
@@ -292,14 +289,14 @@ address {
 }
 
 /* footer */
-.footer-container {
+
+.footer-page {
+  background: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.footer-page {
-  background: #2e2f42;
-}
 .logo-footer {
+  display: inline-block;
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
