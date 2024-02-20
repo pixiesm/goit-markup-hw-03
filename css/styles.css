@@ -56,7 +56,6 @@ header {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  width: 115px;
 }
 
 .page-information {
@@ -204,10 +203,6 @@ address {
 }
 .team-list-item {
   background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   border-radius: 0 0 4px 4px;
   width: 264px;
   height: 380px;
@@ -248,6 +243,7 @@ address {
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
+  text-align: center;
 }
 
 .portfolio-list {
@@ -258,7 +254,6 @@ address {
 }
 .portfolio-list-item {
   width: 360px;
-  display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
@@ -311,7 +306,6 @@ address {
 }
 .footer-page p {
   max-width: 264px;
-  margin-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
